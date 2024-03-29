@@ -1,0 +1,5 @@
+info:
+  app:
+    name: "eureka-server"
+    description: "MedSoft Eureka Server"
+    version: "1.1.0"
