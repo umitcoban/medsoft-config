@@ -1,3 +1,26 @@
+spring:
+  application:
+    name: gatewayserver
+  config:
+    import: "optional:configserver:http://localhost:8763/"
+  profiles:
+    active: "local"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      httpclient:
+        connect-timeout: 1000
+        response-timeout: 10s
+    security:
+      oauth2:
+        resourceserver:
+          jwt:
+            jwk-set-uri: "http://keycloak:7080/realms/master/protocol/openid-connect/certs"
+            issuer-uri: "http://keycloak:7080/realms/master" # Add this line
+
 eureka:
   instance:
     preferIpAddress: true
