@@ -3,8 +3,6 @@ spring:
     name: gatewayserver
   config:
     import: "optional:configserver:http://localhost:8763/"
-  profiles:
-    active: "local"
   cloud:
     gateway:
       discovery:
