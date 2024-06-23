@@ -4,8 +4,8 @@ spring:
       oauth2:
         resourceserver:
           jwt:
-            jwk-set-uri: "http://keycloak:8080/realms/master/protocol/openid-connect/certs"
-            issuer-uri: "http://keycloak:8080/realms/master" # Add this line
+            jwk-set-uri: "http://keycloak:8080/realms/medsoft/protocol/openid-connect/certs"
+            issuer-uri: "http://keycloak:8080/realms/medsoft" # Add this line
 
 eureka:
   instance:
