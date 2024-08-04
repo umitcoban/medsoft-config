@@ -10,7 +10,7 @@ eureka:
 keycloak-admin:
   server-url: "http://keycloak:8080"
   realm: "medsoft"
-  client-id: "medsoft-account-ms"
-  client-secret: "mGaGdPLzuBGcMRKifVXEBKuosNz5FR8z"
+  client-id: "medsoft-ui"
+  client-secret: "JnTgC8ORKayrOWR4g7OkM3GuscTaDWa5"
   admin-user: "admin"
   admin-password: "admin"
